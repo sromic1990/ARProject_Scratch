@@ -14,5 +14,9 @@
 		FacebookController,
 		PurchaseController,
 		HapticFeedbackController,
+		
+		//Game Related
+		ApiController,
+		JsonController,
 	}
 }

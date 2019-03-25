@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\Sourav\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Sourav\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_ARProject_Scratch.-129638863.00" t="ExcludeRecursive" />
-    <e p="H:\Unity Projects\ARProject_Scratch" t="IncludeRecursive">
+    <e p="C:\Users\Sourav\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_ARProject_Scratch.-518509158.00" t="ExcludeRecursive" />
+    <e p="G:\GitRepos\ARProject_Scratch" t="IncludeRecursive">
       <e p="ARProject_Scratch.sln" t="IncludeFlat" />
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
@@ -12,12 +12,20 @@
       <e p="Assets" t="Include">
         <e p="ARProject" t="Include">
           <e p="Scripts" t="Include">
-            <e p="APIScript.cs" t="Include" />
+            <e p="Controllers" t="Include">
+              <e p="APIScript.cs" t="Include" />
+              <e p="JSonClass.cs" t="Include" />
+              <e p="MainController.cs" t="Include" />
+              <e p="UiController.cs" t="Include" />
+            </e>
             <e p="CreateAssetBundle.cs" t="Include" />
             <e p="DownloadHandler.cs" t="Include" />
             <e p="DownloadScript.cs" t="Include" />
-            <e p="JSonClass.cs" t="Include" />
             <e p="Test.cs" t="Include" />
+            <e p="View" t="Include">
+              <e p="SelectionButton.cs" t="Include" />
+              <e p="SelectionButtonInitiator.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="ConsolePro" t="Include">
@@ -209,6 +217,28 @@
                 <e p="LeanZoom.cs" t="Include" />
               </e>
             </e>
+          </e>
+        </e>
+        <e p="OBJImport" t="Include">
+          <e p="CharWordReader.cs" t="Include" />
+          <e p="MTLLoader.cs" t="Include" />
+          <e p="OBJLoader.cs" t="Include" />
+          <e p="OBJLoaderHelper.cs" t="Include" />
+          <e p="OBJObjectBuilder.cs" t="Include" />
+          <e p="Samples" t="Include">
+            <e p="ObjFromFile.cs" t="Include" />
+            <e p="ObjFromStream.cs" t="Include" />
+          </e>
+          <e p="StringExtensions.cs" t="Include" />
+          <e p="TextureLoader" t="Include">
+            <e p="BinaryExtensions.cs" t="Include" />
+            <e p="BMPLoader.cs" t="Include" />
+            <e p="ColorExtensions.cs" t="Include" />
+            <e p="DDSLoader.cs" t="Include" />
+            <e p="ImageLoader.cs" t="Include" />
+            <e p="ImageLoaderHelper.cs" t="Include" />
+            <e p="ImageUtils.cs" t="Include" />
+            <e p="TGALoader.cs" t="Include" />
           </e>
         </e>
         <e p="Plugins" t="Include">

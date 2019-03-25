@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 961e6c6703a364834b19081431cdf242
+guid: 27dd53f481d706b4caada4b683577df8
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -33,12 +33,20 @@ ModelImporter:
     400024: Plane003
     400026: Plane004
     400028: Sphere001
-    2100000: MAIN MATERIAL (only modifiy this one!)
-    2100002: chocolate
-    2100004: vanilla
-    2100006: vainlla 2
-    2100008: harina
-    2100010: Porcelain
+    2100000: Box001Mat
+    2100002: Cylinder001Mat
+    2100004: Cylinder002Mat
+    2100006: Cylinder003Mat
+    2100008: Cylinder004Mat
+    2100010: Cylinder005Mat
+    2100012: Cylinder006Mat
+    2100014: Cylinder007Mat
+    2100016: Object001Mat
+    2100018: Plane001Mat
+    2100020: Plane002Mat
+    2100022: Plane003Mat
+    2100024: Plane004Mat
+    2100026: Sphere001Mat
     2300000: Box001
     2300002: Cylinder001
     2300004: Cylinder002
@@ -67,20 +75,20 @@ ModelImporter:
     3300022: Plane003
     3300024: Plane004
     3300026: Sphere001
-    4300000: Cylinder007
-    4300002: Plane003
-    4300004: Plane002
-    4300006: Plane001
-    4300008: Cylinder006
-    4300010: Object001
-    4300012: Cylinder003
-    4300014: Cylinder004
-    4300016: Cylinder001
-    4300018: Cylinder002
-    4300020: Cylinder005
-    4300022: Sphere001
+    4300000: Box001
+    4300002: Cylinder001
+    4300004: Cylinder002
+    4300006: Cylinder003
+    4300008: Cylinder004
+    4300010: Cylinder005
+    4300012: Cylinder006
+    4300014: Cylinder007
+    4300016: Object001
+    4300018: Plane001
+    4300020: Plane002
+    4300022: Plane003
     4300024: Plane004
-    4300026: Box001
+    4300026: Sphere001
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -115,7 +123,6 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
-    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -140,9 +147,6 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
-    blendShapeNormalImportMode: 1
-    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:

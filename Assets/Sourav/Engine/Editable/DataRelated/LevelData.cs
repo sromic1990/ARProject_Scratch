@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Sourav.Engine.Editable.NotificationRelated;
 using UnityEngine;
 
@@ -89,57 +90,10 @@ namespace Sourav.Engine.Editable.DataRelated
 			}
 		}
 		public bool isDataChanged;
+
+		public List<bool> downloadList;
 		
-		public int currentTutorial;
-		
-		public int maxTutorialValue;
-
-		[Range(0, 60)]
-		public int timerValue;
-		
-		public bool isTutorialOn;
-		public bool isStageClear;
-		
-		public bool isTimerStarted;
-		public bool pauseTimer;
-		public float waitAfterTimesUp;
-
-		public int levelOverCoins;
-		public int perBonusWordCoins;
-
-		public bool videoFromLevelOver;
-		public bool videoFromMainMenu;
-		public int coinsFromThisLevel;
-
-		public int firstAdLevel;
-		public int adAfterEachLevel;
-		
-
-		public int coins1;
-		public int coins2;
-		public int coins3;
-		public int coins4;
-		public int coins5;
-		public int coins6;
-
-		public int coinAdd;
-
-		public bool hasGameStarted;
-
-		public bool isPopUpOpenDuringBonusLevel;
-
-		public bool alreadyRewarded;
-
-		public int rewardPerVideo;
-		public int dailyReward;
-
-		public int hours, minutes, seconds;
-
-		public bool turnOnMusic;
-		public bool turnOnSFX;
-		
-		public bool isFromRestore;
-		public bool isVideoRewarded;
+		public RootObject root;
 
 		private void DataChanged()
 		{
@@ -162,14 +116,6 @@ namespace Sourav.Engine.Editable.DataRelated
 
 		public void SetDefault()
 		{
-			DateTime startTime = DateTime.UtcNow;
-			dateOfNextReward = startTime.AddDays(1);
-			
-			TimeSpan timeRemaining = dateOfNextReward-startTime;
-
-			hours   = (int) timeRemaining.TotalHours; // truncate partial hours
-			minutes = timeRemaining.Minutes;
-			seconds = timeRemaining.Seconds;
 		}
 	}
 
@@ -190,5 +136,23 @@ namespace Sourav.Engine.Editable.DataRelated
 		public DateTime dateOfNextReward;
 
 		public int lastAdLevel;
+	}
+	
+	[System.Serializable]
+	public class RootObject
+	{
+		public List<Datum> data;
+	}
+
+	[System.Serializable]
+	public class Datum
+	{
+		public int id;
+		public string model;
+		public string model_checksum;
+		public string uv_map;
+		public string uv_map_checksum;
+		public string diffused_uv_map;
+		public string diffused_uv_map_checksum;
 	}
 }

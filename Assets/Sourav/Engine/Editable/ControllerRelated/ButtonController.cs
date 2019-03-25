@@ -23,7 +23,9 @@ namespace Sourav.Engine.Editable.ControllerRelated
 			}
 			switch (button)
 			{
-				
+				case ButtonType.Play:
+					App.GetNotificationCenter().Notify(Notification.PlayButtonPressed);
+				break;
 			}
 		}
 	}

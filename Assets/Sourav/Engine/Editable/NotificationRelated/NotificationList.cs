@@ -28,6 +28,18 @@
         SaveData,
         DataLoaded,
         DataChanged,
+        
+        //Gameplay related
+        StartWebservice,
+        WebserviceSuccess,
+        WebserviceFailure,
+        DataSuccessfullyParsed,
+        DataParsingFailure,
+        
+        
+        //Button related
+        PlayButtonPressed,
+        SelectionButtonPressed,
     }
 }
 
