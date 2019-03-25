@@ -40,6 +40,11 @@
         //Button related
         PlayButtonPressed,
         SelectionButtonPressed,
+       
+        
+        //api related
+        StartDownloadingModel,
+        ModelDownloaded,
     }
 }
 

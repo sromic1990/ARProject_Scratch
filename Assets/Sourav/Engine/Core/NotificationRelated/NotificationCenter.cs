@@ -76,7 +76,7 @@ namespace Sourav.Engine.Core.NotificationRelated
 		{
 			if (controllers == null)
 				return;
-//			Debug.Log("Notification = "+notification);
+			Debug.Log("Notification = "+notification);
 			for (int i = 0; i < controllers.Count; i++)
 			{
 				controllers[i].OnNotificationReceived(notification, param);

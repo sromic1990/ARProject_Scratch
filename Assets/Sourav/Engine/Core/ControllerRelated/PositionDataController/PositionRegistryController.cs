@@ -17,7 +17,8 @@ namespace Sourav.Engine.Core.ControllerRelated.PositionDataController
 			}
 		}
 
-		public override void OnNotificationReceived(Notification notification, NotificationParam param = null)
+		public override void OnNotificationReceived(Notification notification,
+			NotificationParam param = null)
 		{
 			switch (notification)
 			{

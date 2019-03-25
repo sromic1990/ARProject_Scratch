@@ -1,4 +1,5 @@
 ﻿using ARProject.Scripts.View;
+using Dummiesman;
 using Sourav.Engine.Core.ControllerRelated;
 using Sourav.Engine.Core.NotificationRelated;
 using Sourav.Engine.Editable.NotificationRelated;
@@ -15,6 +16,7 @@ namespace ARProject.Scripts.Controllers
 		[SerializeField] private GameObject selectionMenu;
 		[SerializeField] private SelectionButtonInitiator buttonInitiator;
 		
+		
 		public override void OnNotificationReceived(Notification notification, NotificationParam param = null)
 		{
 			switch (notification)
@@ -29,7 +31,18 @@ namespace ARProject.Scripts.Controllers
 					buttonInitiator.CreateButtons();
 					ShowSelectionScreen();
 					break;
+				
+				case Notification.SelectionButtonPressed:
+					HideButtonPanel();
+					break;
 			}
+		}
+
+	
+
+		private void HideButtonPanel()
+		{
+			selectionMenu.Hide();
 		}
 
 		private void ShowSelectionScreen()
@@ -51,5 +64,6 @@ namespace ARProject.Scripts.Controllers
 		{
 			Debug.Log("Show Loading Screen");
 		}
+		
 	}
 }

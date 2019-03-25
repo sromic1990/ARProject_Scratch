@@ -8,8 +8,7 @@ namespace ARProject.Scripts.Controllers
 {
 	public class ApiScript : Controller 
 	{
-		//FIXME
-		private const string URL = "http://webappfactory.co/armodel/combined.php";
+		
 
 		// Start is called before the first frame update
 		private void StartWebserviceCall()
@@ -19,7 +18,7 @@ namespace ARProject.Scripts.Controllers
 
 		IEnumerator GenerateRequest() 
 		{
-			WWW www = new WWW(URL);
+			WWW www = new WWW(App.GetLevelData().BASE_URL);
 			while (!www.isDone)
 				yield return null;
 		

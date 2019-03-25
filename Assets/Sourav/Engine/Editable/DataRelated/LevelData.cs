@@ -91,9 +91,12 @@ namespace Sourav.Engine.Editable.DataRelated
 		}
 		public bool isDataChanged;
 
-		public List<bool> downloadList;
-		
+	
+		public List<int> downloadedModelIDs;
+		public List<GameObject> listOfDownloadedModels;
+		public string BASE_URL;
 		public RootObject root;
+		public int selectionButtonPressed;
 
 		private void DataChanged()
 		{

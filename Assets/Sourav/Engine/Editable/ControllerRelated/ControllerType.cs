@@ -18,5 +18,6 @@
 		//Game Related
 		ApiController,
 		JsonController,
+		DownloadHandler,
 	}
 }

@@ -55,7 +55,8 @@ namespace Sourav.Utilities.Scripts.Camera.CameraFollow
 			zoom = false;
 		}
 
-		public override void OnNotificationReceived(Notification notification, NotificationParam optionalObject = null)
+		public override void OnNotificationReceived(Notification notification, 
+			NotificationParam optionalObject = null)
 		{
 			switch (notification)
 			{

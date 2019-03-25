@@ -225,7 +225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 468576889}
   - component: {fileID: 468576890}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ButtonInitializer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -318,6 +318,7 @@ MonoBehaviour:
   - {fileID: 253225534}
   - {fileID: 1369196610}
   - {fileID: 606749405}
+  - {fileID: 2083511344}
   controllerObject: {fileID: 688380919}
   data: {fileID: 669790194}
   dataHandler: {fileID: 669790195}
@@ -363,6 +364,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  loadedObject: {fileID: 0}
+  gameobjectParent: {fileID: 0}
 --- !u!1 &606108170
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,7 +374,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 606108171}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: SelectionScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -409,7 +412,7 @@ GameObject:
   - component: {fileID: 606749403}
   - component: {fileID: 606749402}
   - component: {fileID: 606749405}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -579,9 +582,12 @@ MonoBehaviour:
     isAdOn: 0
     lastAdLevel: 0
   isDataChanged: 0
-  downloadList: 
+  downloadedModelIDs: 
+  listOfDownloadedModels: []
+  BASE_URL: http://webappfactory.co/armodel/combined_obj.php
   root:
     data: []
+  selectionButtonPressed: 0
 --- !u!114 &669790195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -625,6 +631,7 @@ Transform:
   - {fileID: 586557488}
   - {fileID: 253225533}
   - {fileID: 1369196609}
+  - {fileID: 2083511343}
   m_Father: {fileID: 1547052493}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -637,7 +644,7 @@ GameObject:
   m_Component:
   - component: {fileID: 742497299}
   - component: {fileID: 742497300}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -824,7 +831,7 @@ GameObject:
   - component: {fileID: 1433120192}
   - component: {fileID: 1433120191}
   - component: {fileID: 1433120190}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Viewport
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -908,7 +915,7 @@ GameObject:
   - component: {fileID: 1478587692}
   - component: {fileID: 1478587691}
   - component: {fileID: 1478587694}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: StartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1032,7 +1039,7 @@ GameObject:
   - component: {fileID: 1531277033}
   - component: {fileID: 1531277032}
   - component: {fileID: 1531277031}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Scroll View
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1242,7 +1249,7 @@ Camera:
   m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 32
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -1350,7 +1357,7 @@ GameObject:
   - component: {fileID: 1751280302}
   - component: {fileID: 1751280304}
   - component: {fileID: 1751280303}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1544,7 +1551,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2043409732}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1602,3 +1609,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2083511342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2083511343}
+  - component: {fileID: 2083511344}
+  m_Layer: 0
+  m_Name: Downloader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2083511343
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2083511342}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 688380919}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2083511344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2083511342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e9d653323e5fe1419abe1ab3a282c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 13
